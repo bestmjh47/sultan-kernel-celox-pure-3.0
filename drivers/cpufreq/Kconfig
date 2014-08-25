@@ -217,5 +217,10 @@ depends on X86
 source "drivers/cpufreq/Kconfig.x86"
 endmenu
 
+config USERSPACE_CPU_BOOST
+	bool "Userspace-controlled CPU boosting"
+	help
+	  Simple CPU-boost driver that is controlled by userspace.
+
 endif
 endmenu
